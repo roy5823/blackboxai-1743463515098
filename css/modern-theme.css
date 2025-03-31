@@ -1,0 +1,37 @@
+/* Modern Theme Styles */
+:root {
+  --primary: 59 130 246;
+  --secondary: 168 85 247;
+  --background: 249 250 251;
+  --text: 17 24 39;
+  --card: 255 255 255;
+  
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.dark {
+  --primary: 99 102 241;
+  --secondary: 217 70 239;
+  --background: 17 24 39;
+  --text: 243 244 246;
+  --card: 31 41 55;
+}
+
+.glass {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  backdrop-filter: blur(16px);
+  background-color: rgba(31, 41, 55, 0.2);
+}
+
+/* Theme toggle animation */
+#themeToggle i {
+  transition: transform 0.3s ease;
+}
+
+#themeToggle:hover i {
+  transform: scale(1.1);
+}
