@@ -1,0 +1,54 @@
+/* Modern Theme Refresh */
+:root {
+  /* Vibrant color palette */
+  --primary: 79 70 229;    /* Indigo-600 */
+  --secondary: 219 39 119; /* Pink-600 */
+  --accent: 234 88 12;     /* Orange-600 */
+  --background: 249 250 251; /* Gray-50 */
+  --text: 17 24 39;        /* Gray-900 */
+  --card: 255 255 255;     /* White */
+  --border: 229 231 235;   /* Gray-200 */
+  
+  /* Glass effects */
+  --glass-blur: 12px;
+  --glass-opacity: 0.2;
+}
+
+.dark {
+  --primary: 99 102 241;   /* Indigo-500 */
+  --secondary: 236 72 153; /* Pink-500 */
+  --accent: 249 115 22;    /* Orange-500 */
+  --background: 17 24 39;  /* Gray-900 */
+  --text: 243 244 246;     /* Gray-100 */
+  --card: 31 41 55;        /* Gray-800 */
+  --border: 55 65 81;      /* Gray-700 */
+  
+  --glass-blur: 16px;
+  --glass-opacity: 0.3;
+}
+
+/* Core styles */
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--text));
+  transition: background-color 0.5s ease;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: rgb(var(--primary));
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgb(var(--primary) / 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass effects */
+.glass {
+  backdrop-filter: blur(var(--glass-blur));
+  background: rgba(var(--card), var(--glass-opacity));
+  border: 1px solid rgba(var(--border), 0.3);
+}
